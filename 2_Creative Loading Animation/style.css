@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.top{
+    background-color: rgb(17, 0, 250);
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.one{
+    background-color: aliceblue;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 50px;
+
+}
+.midd{
+    z-index: 10
+}
+.center{
+    z-index: 20;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+.hm{
+    margin: 5px;
+}
+
+
+.midd, .center, .side, .last, .l1, .l2, .s1, .s2, .m1, .m2, .c1 {
+  position: relative;   /* required for z-index */
+}
