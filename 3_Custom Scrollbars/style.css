@@ -1,0 +1,25 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+ body{
+    background-color:  rgb(24, 83, 83);
+ }
+ .para{
+    width: 80%;
+    height: auto;
+    background-color: rgb(171, 222, 222);
+    margin: 10px;
+ }
+
+ ::-webkit-scrollbar{
+    background-color: transparent;
+ }
+ ::-webkit-scrollbar-thumb{
+ background: linear-gradient(rgb(8, 101, 94),rgb(4, 71, 142),rgb(52, 37, 116));
+ border-radius: 10px;
+ border: 2px solid rgb(0, 145, 171);
+
+ }
