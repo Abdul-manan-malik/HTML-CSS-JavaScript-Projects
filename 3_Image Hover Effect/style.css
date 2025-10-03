@@ -1,0 +1,72 @@
+body{
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top: 50px;
+    background-color: rgb(45, 35, 22);
+    width: 50%;
+    height: 80vh;
+    border: 2px solid black;
+    box-shadow: 0px 0px 40px black;
+    align-self: center;
+    position: relative;
+}
+
+.clip{
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: 2s;
+}
+.clip1{
+    background: url(assets/07886691-90fc-4eb3-9c63-8413e402b1d1.jpg);
+    background-size: cover;
+    background-position: center;
+clip-path: polygon(50% 0%, 49% 58%, 50% 100%, 0% 50%);
+}
+.clip2{
+    background: url(assets/ac5a8ce8-8c98-405e-b029-bc445a5f6191.jpg);
+    background-size: cover;
+    background-position: center;
+clip-path: polygon(50% 0%, 49% 58%, 50% 100%, 100% 52%);
+}
+.clip3{
+    background: url(assets/d97d9305-c16f-4904-b244-0ec32e1b1962.jpg);
+    background-size: cover;
+    background-position: center;
+ clip-path: polygon(100% 100%, 78% 100%, 50% 100%, 100% 52%);
+}
+.clip4{
+    background: url(assets/download\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+clip-path: polygon(0 83%, 0 100%, 50% 100%, 0% 50%);
+}
+.clip5{
+    background: url(assets/download\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+clip-path: polygon(50% 0%, 0 0, 0 0, 0% 50%);
+}
+.clip6{
+    background: url(assets/download\ \(3\).jpg);
+    background-size: cover;
+    background-position: center;
+ clip-path: polygon(50% 0%, 100% 50%, 100% 6%, 100% 0);
+}
+
+.container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
